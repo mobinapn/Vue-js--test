@@ -15,7 +15,7 @@
         {"storage": "512GB" }
       ],
       "available": false,
-      "colors": ["cream"],
+      "colors": ["cream" , "silver" , "blue"],
       "hasTimer": false
     },
     {
@@ -34,7 +34,7 @@
         { "storage": "1TB" }
       ],
       "available": false,
-      "colors": ["silver"],
+      "colors": ["silver" , "black"],
       "hasTimer": false
     },
     {
@@ -53,7 +53,6 @@
         { "storage": "1TB" }
       ],
       "available": false,
-      "colors": ["black"],
       "hasTimer": false
     },
     {
@@ -72,7 +71,7 @@
         { "storage": "256GB" }
       ],
       "available": true,
-      "colors": ["blue"],
+      "colors": ["black" , "silver" , "blue" , "purple"],
       "hasTimer": true,
       "timeRemaining": 122400000
     },
@@ -92,7 +91,6 @@
         { "storage": "256GB" }
       ],
       "available": true,
-      "colors": ["black"],
       "hasTimer": false
     }
   ]

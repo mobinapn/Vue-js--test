@@ -62,9 +62,8 @@
   .product-timer {
     position: absolute;
     top: 1rem;
-    right: 1rem;
-    width: 70%;
-    font-family: sans-serif;
+    right: 2rem;
+    width: 80%;
   }
   
   .product-timer__header {

@@ -21,9 +21,10 @@
   <style scoped>
   .product-colors {
     position: absolute;
-    top: 0.75rem;
+    top: 5rem;
     right: 0.75rem;
     display: flex;
+    flex-direction: column;
     gap: 0.3rem;
   }
   

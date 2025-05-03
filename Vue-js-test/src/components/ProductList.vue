@@ -37,7 +37,7 @@ onMounted(fetchData);
 
 .product-list__title {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 1rem;
   font-weight: bold;
   text-align: right;
 }

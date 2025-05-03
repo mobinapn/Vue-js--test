@@ -1,6 +1,6 @@
 <template>
     <header :class="{ open: isMenuOpen }">
-      <img class="logo" src="../../public/images/digi_prev_ui.png">
+      <img class="logo" src="/images/digi_prev_ui.png">
   
       <!-- آیکون همبرگر برای موبایل -->
       <div class="menu-toggle" @click="toggleMenu">
