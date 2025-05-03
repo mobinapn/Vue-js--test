@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "name": "گوشی موبایل سامسونگ Galaxy S24",
+      "description": "Ultra 5G ظرفیت 512 گیگابایت رم 12 گیگابایت - ویتنام",
+      "image": "/images/c23b49b0be1c4ae5b2a3d7a3281d2f1731065243_1726037574.webp",
+      "price": null,
+      "originalPrice": null,
+      "discount": 0,
+      "rating": 5.0,
+      "specs": [
+        { "battery": "5000" },
+        { "camera": "200" },
+        {"screen": "6.9" },
+        {"storage": "512GB" }
+      ],
+      "available": false,
+      "colors": ["cream"],
+      "hasTimer": false
+    },
+    {
+      "id": 2,
+      "name": "گوشی موبایل سامسونگ Galaxy S22",
+      "description": "Ultra 5G ظرفیت 1 ترابایت رم 12 گیگابایت",
+      "image": "/images/download.jpg",
+      "price": null,
+      "originalPrice": null,
+      "discount": 0,
+      "rating": 0,
+      "specs": [
+        { "battery": "5000" },
+        { "camera": "200" },
+        { "screen": "6.9" },
+        { "storage": "1TB" }
+      ],
+      "available": false,
+      "colors": ["silver"],
+      "hasTimer": false
+    },
+    {
+      "id": 3,
+      "name": "گوشی موبایل سامسونگ Galaxy S25",
+      "description": "Ultra 5G ظرفیت 1 ترابایت رم 12 گیگابایت - ویتنام",
+      "image": "/images/WFKB3_SQ1_0000017815_TITANIUM_GREY_SLf.webp",
+      "price": null,
+      "originalPrice": null,
+      "discount": 0,
+      "rating": 5.0,
+      "specs": [
+        { "battery": "5000" },
+        { "camera": "200" },
+        { "screen": "6.9" },
+        { "storage": "1TB" }
+      ],
+      "available": false,
+      "colors": ["black"],
+      "hasTimer": false
+    },
+    {
+      "id": 4,
+      "name": "گوشی موبایل سامسونگ مدل Galaxy",
+      "description": "S25 Plus 5G ظرفیت 256 گیگابایت رم 12 گیگابایت - ویتنام",
+      "image": "/images/download (1).jpg",
+      "price": 15299000,
+      "originalPrice": 17999000,
+      "discount": 4,
+      "rating": 5.0,
+      "specs": [
+        { "battery": "4900" },
+        { "camera": "50" },
+        { "screen": "6.7" },
+        { "storage": "256GB" }
+      ],
+      "available": true,
+      "colors": ["blue"],
+      "hasTimer": true,
+      "timeRemaining": 122400000
+    },
+    {
+      "id": 5,
+      "name": "گوشی موبایل سامسونگ Galaxy S25",
+      "description": "Ultra 5G ظرفیت 256 گیگابایت رم 12 گیگابایت - ویتنام",
+      "image": "/images/download (2).jpg",
+      "price": 51439000,
+      "originalPrice": null,
+      "discount": 0,
+      "rating": 4.0,
+      "specs": [
+        { "battery": "5000" },
+        { "camera": "200" },
+        { "screen": "6.9" },
+        { "storage": "256GB" }
+      ],
+      "available": true,
+      "colors": ["black"],
+      "hasTimer": false
+    }
+  ]
+  
