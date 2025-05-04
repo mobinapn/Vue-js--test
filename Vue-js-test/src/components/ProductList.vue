@@ -1,45 +1,52 @@
+<!-- product-list -->
 <script setup>
-import { onMounted } from 'vue';
 import ProductCard from './ProductCard.vue';
-import { useFetchProducts } from '@/composables/useFetchProducts.js';
+import { computed } from 'vue';
 
-const {
-  products,
-  error,
-  loading,
-  fetchData
-} = useFetchProducts('/data/products.json');
+const props = defineProps({
+  products: {
+    type: Array,
+    required: true
+  },
+  loading: {
+    type: Boolean,
+    default: false
+  },
+  error: {
+    type: String,
+    default: null
+  },
+  limit: {
+    type: Number,
+    default: null
+  }
+});
 
-onMounted(fetchData);
+const limitedProducts = computed(() => {
+  return props.limit ? props.products.slice(0, props.limit) : props.products;
+});
 </script>
 
 <template>
   <div class="product-list">
-    <h1 class="product-list__title">پرفروش‌ترین‌ها</h1>
-
-    <div v-if="loading">⏳ در حال بارگذاری...</div>
-    <div v-else-if="error" class="error">{{ error }}</div>
+    <div v-if="loading" class="loading">⏳ در حال بارگذاری...</div>
+    <div v-else-if="error" class="error">❌ {{ error }}</div>
 
     <div v-else class="product-list__container">
       <ProductCard 
-        v-for="product in products" 
-        :key="product.id"
-        :product="product"
+        v-for="product in limitedProducts" 
+        :key="product.id" 
+        :product="product" 
+        class="product-card"
       />
     </div>
   </div>
 </template>
+
 <style scoped>
 .product-list {
   width: 100%;
   margin-bottom: 2em;
-}
-
-.product-list__title {
-  font-size: 1.8rem;
-  margin: 1.5rem 1rem;
-  font-weight: bold;
-  text-align: right;
 }
 
 .product-list__container {
@@ -55,7 +62,14 @@ onMounted(fetchData);
     justify-content: center;
   }
 }
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: red;
+}
 </style>
-
-
-

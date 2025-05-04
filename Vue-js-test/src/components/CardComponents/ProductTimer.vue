@@ -2,7 +2,7 @@
     <div class="product-timer">
       <div class="product-timer__header">
         <span class="product-timer__label"> وقت خرید !</span>
-        <span class="product-timer__time">{{ formattedTime }}</span>
+        <span class="product-timer__time">{{ toPersianDigits(formattedTime) }}</span>
       </div>
       <div class="product-timer__bar">
         <div class="product-timer__progress" :style="{ width: progressPercentage + '%' }"></div>
@@ -12,6 +12,7 @@
   
   <script setup>
   import { ref, computed, onMounted, onUnmounted } from 'vue'
+  import { usePersianPrice } from '../../composables/usePersianPrice';
   
   const props = defineProps({
     timeRemaining: {
@@ -24,6 +25,7 @@
     }
   })
   
+  const {  toPersianDigits } = usePersianPrice();
   const currentTime = ref(props.timeRemaining)
   let timer = null
 

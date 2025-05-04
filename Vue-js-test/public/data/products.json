@@ -21,7 +21,7 @@
     {
       "id": 2,
       "name": "گوشی موبایل سامسونگ Galaxy S22",
-      "description": "Ultra 5G ظرفیت 1 ترابایت رم 12 گیگابایت",
+      "description": " - ویتنام Ultra 5G ظرفیت 1 ترابایت رم 12 گیگابایت",
       "image": "/images/download.jpg",
       "price": null,
       "originalPrice": null,
@@ -91,6 +91,197 @@
         { "storage": "256GB" }
       ],
       "available": true,
+      "hasTimer": false
+    },
+    {
+      "id": 6,
+      "name": "گوشی موبایل سامسونگ Galaxy Z Fold5",
+      "description": "ظرفیت 512 گیگابایت رم 12 گیگابایت - کره جنوبی",
+      "image": "/images/6.webp",
+      "price": 76990000,
+      "originalPrice": 79990000,
+      "discount": 3,
+      "rating": 4.7,
+      "specs": [
+        { "battery": "4400" },
+        { "camera": "50" },
+        { "screen": "7.6" },
+        { "storage": "512GB" }
+      ],
+      "available": true,
+      "colors": ["phantom black", "gray", "blue"],
+      "hasTimer": false
+    },
+    {
+      "id": 7,
+      "name": "گوشی موبایل سامسونگ Galaxy Z Flip5",
+      "description": "ظرفیت 256 گیگابایت رم 8 گیگابایت - کره",
+      "image": "/images/7.webp",
+      "price": 47900000,
+      "originalPrice": 49900000,
+      "discount": 4,
+      "rating": 4.1,
+      "specs": [
+        { "battery": "3700" },
+        { "camera": "12" },
+        { "screen": "6.7" },
+        { "storage": "256GB" }
+      ],
+      "available": false,
+      "colors": ["graphite", "mint"],
+      "hasTimer": false
+    },
+    {
+      "id": 8,
+      "name": "گوشی موبایل سامسونگ Galaxy A14",
+      "description": "ظرفیت 64 گیگابایت رم 4 گیگابایت - چین",
+      "image": "/images/8.webp",
+      "price": 6890000,
+      "originalPrice": 7490000,
+      "discount": 8,
+      "rating": 3.8,
+      "specs": [
+        { "battery": "5000" },
+        { "camera": "50" },
+        { "screen": "6.6" },
+        { "storage": "64GB" }
+      ],
+      "available": true,
+      "colors": ["black", "light green"],
+      "hasTimer": true,
+      "timeRemaining": 25920000
+    },
+    {
+      "id": 9,
+      "name": "گوشی موبایل سامسونگ Galaxy M14",
+      "description": "ظرفیت 128 گیگابایت رم 6 گیگابایت - چین",
+      "image": "/images/9.webp",
+      "price": 8990000,
+      "originalPrice": 9790000,
+      "discount": 9,
+      "rating": 4.0,
+      "specs": [
+        { "battery": "6000" },
+        { "camera": "50" },
+        { "screen": "6.6" },
+        { "storage": "128GB" }
+      ],
+      "available": true,
+      "colors": ["navy", "blue"],
+      "hasTimer": false
+    },
+    {
+      "id": 10,
+      "name": "گوشی موبایل سامسونگ Galaxy Note 20 Ultra",
+      "description": "ظرفیت 256 گیگابایت رم 12 گیگابایت - ویتنام",
+      "image": "/images/10.webp",
+      "price": 22990000,
+      "originalPrice": 24990000,
+      "discount": 8,
+      "rating": 4.6,
+      "specs": [
+        { "battery": "4500" },
+        { "camera": "108" },
+        { "screen": "6.9" },
+        { "storage": "256GB" }
+      ],
+      "available": true,
+      "colors": ["bronze", "black"],
+      "hasTimer": true,
+      "timeRemaining": 64800000
+    },
+    {
+      "id": 11,
+      "name": "گوشی موبایل سامسونگ Galaxy A24",
+      "description": "ظرفیت 128 گیگابایت رم 6 گیگابایت - امارات",
+      "image": "/images/11.webp",
+      "price": 7490000,
+      "originalPrice": 8290000,
+      "discount": 10,
+      "rating": 3.9,
+      "specs": [
+        { "battery": "5000" },
+        { "camera": "50" },
+        { "screen": "6.5" },
+        { "storage": "128GB" }
+      ],
+      "available": true,
+      "colors": ["purple", "blue" , "cream"],
+      "hasTimer": false
+    },
+    {
+      "id": 12,
+      "name": "گوشی موبایل سامسونگ Galaxy S21 FE",
+      "description": "ظرفیت 128 گیگابایت رم 6 گیگابایت - هند",
+      "image": "/images/12.webp",
+      "price": 17490000,
+      "originalPrice": null,
+      "discount": 0,
+      "rating": 4.0,
+      "specs": [
+        { "battery": "4500" },
+        { "camera": "12" },
+        { "screen": "6.4" },
+        { "storage": "128GB" }
+      ],
+      "available": false,
+      "hasTimer": false
+    },
+    {
+      "id": 13,
+      "name": "گوشی موبایل سامسونگ Galaxy S20",
+      "description": "ظرفیت 128 گیگابایت رم 8 گیگابایت - ویتنام",
+      "image": "/images/13.webp",
+      "price": 11790000,
+      "originalPrice": 12990000,
+      "discount": 9,
+      "rating": 4.2,
+      "specs": [
+        { "battery": "4000" },
+        { "camera": "64" },
+        { "screen": "6.2" },
+        { "storage": "128GB" }
+      ],
+      "available": true,
+      "hasTimer": true,
+      "timeRemaining": 32400000
+    },
+    {
+      "id": 14,
+      "name": "گوشی موبایل سامسونگ Galaxy A04s",
+      "description": "ظرفیت 64 گیگابایت رم 4 گیگابایت - هند",
+      "image": "/images/14.webp",
+      "price": 5290000,
+      "originalPrice": 5990000,
+      "discount": 12,
+      "rating": 3.5,
+      "specs": [
+        { "battery": "5000" },
+        { "camera": "50" },
+        { "screen": "6.5" },
+        { "storage": "64GB" }
+      ],
+      "available": true,
+      "colors": ["silver", "green"],
+      "hasTimer": false
+    },
+    {
+      "id": 15,
+      "name": "گوشی موبایل سامسونگ Galaxy S10 Plus",
+      "description": "ظرفیت 128 گیگابایت رم 8 گیگابایت - ویتنام",
+      "image": "/images/15.webp",
+      "price": 9790000,
+      "originalPrice": 10790000,
+      "discount": 9,
+      "rating": 4.1,
+      "specs": [
+        { "battery": "4100" },
+        { "camera": "16" },
+        { "screen": "6.4" },
+        { "storage": "128GB" }
+      ],
+      "available": true,
+      "colors": ["black", "white"],
       "hasTimer": false
     }
   ]

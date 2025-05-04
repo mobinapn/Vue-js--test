@@ -1,15 +1,17 @@
 <template>
     <header :class="{ open: isMenuOpen }">
-      <img class="logo" src="/images/digi_prev_ui.png">
-  
-      <!-- آیکون همبرگر برای موبایل -->
+      <RouterLink to="/">
+        <img class="logo" src="/images/Logo-removebg-preview.png">
+      </RouterLink>
+
       <div class="menu-toggle" @click="toggleMenu">
         <i class="fa-solid" :class="isMenuOpen ? 'fa-xmark' : 'fa-bars'"></i>
       </div>
   
       <nav class="nav">
-        <ul class="navigation">
+        <ul class="navigation" @click="toggleMenu">
           <li><RouterLink to="/">خانه</RouterLink></li>
+          <li><RouterLink to="/products">محصولات</RouterLink></li>
           <li><RouterLink to="/">درباره ما</RouterLink></li>
           <li><RouterLink to="/">خدمات</RouterLink></li>
         </ul>
@@ -20,7 +22,6 @@
         </div>
       </nav>
   
-      <!-- باکس سرچ -->
       <div class="searchBox" :class="{ active: isSearchOpen }">
         <input type="text" placeholder="اینجا جست و جو کنید..." />
       </div>
@@ -44,7 +45,7 @@
   </script>
   
   <style scoped>
-  /* ساختار کلی */
+
   header {
     position: fixed;
     top: 0;
@@ -57,25 +58,20 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    direction: rtl;
     z-index: 1000;
   }
-  
-  /* لوگو */
+
   .logo{
     width: 150px;
     height: auto;
 }
 
-  
-  /* آیکون منوی موبایل */
   .menu-toggle {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
   }
-  
-  /* ناوبری */
+
   .nav {
     display: flex;
     align-items: center;
@@ -110,13 +106,13 @@
     width: 100%;
   }
   
-  /* آیکون جست‌وجو */
+
   .search {
     font-size: 1.2rem;
     cursor: pointer;
   }
   
-  /* باکس جست‌وجو */
+
   .searchBox {
     position: absolute;
     top: 70px;
@@ -142,7 +138,7 @@
     background: transparent;
   }
   
-  /* حالت موبایل */
+
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;

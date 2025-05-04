@@ -3,14 +3,14 @@
       <template v-if="available">
         <div class="price-container">
           <div class="product-price__current">
-            {{ formattedPrice }} تومان
+           {{ formatPrice(originalPrice) }}
           </div>
           <div v-if="originalPrice" class="product-price__original">
-            {{ formattedOriginalPrice }} تومان
+            {{ formatPrice(price) }}
           </div>
         </div>
         <div v-if="discount > 0" class="product-price__discount">
-          {{ discount }}٪
+          {{ toPersianDigits(discount) }}٪
         </div>
       </template>
       <div v-else class="product-price__unavailable">
@@ -20,7 +20,8 @@
   </template>
   
   <script setup>
-  import { computed } from 'vue';
+import { usePersianPrice } from '../../composables/usePersianPrice';
+
   
   const props = defineProps({
     price: {
@@ -40,19 +41,9 @@
       default: true
     }
   });
+
+  const { formatPrice , toPersianDigits } = usePersianPrice();
   
-  // Format numbers with comma separator
-  const formatNumber = (num) => {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  };
-  
-  const formattedPrice = computed(() => {
-    return props.price ? formatNumber(props.price) : '';
-  });
-  
-  const formattedOriginalPrice = computed(() => {
-    return props.originalPrice ? formatNumber(props.originalPrice) : '';
-  });
   </script>
   
   <style scoped>
