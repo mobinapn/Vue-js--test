@@ -69,7 +69,7 @@
   
   .feature-icon {
     background-color: rgba(37, 99, 235, 0.1);
-    color: #2563eb;
+    color: var(--color-primary);
     width: 50px;
     height: 50px;
     border-radius: 50%;

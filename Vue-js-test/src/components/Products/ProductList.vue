@@ -1,4 +1,4 @@
-<!-- product-list -->
+
 <script setup>
 import ProductCard from './ProductCard.vue';
 import { computed } from 'vue';

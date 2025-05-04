@@ -1,15 +1,12 @@
 <template>
   <div class="brand-slider-wrapper">
     <div class="slider-container">
-      <!-- باکس ثابت برندهای منتخب -->
       <div class="featured-brands">
         <div class="featured-icon">
           <i class="fa-solid fa-circle-check"></i>
         </div>
         <h3>برندهای منتخب</h3>
       </div>
-
-      <!-- اسلایدر -->
       <div class="swiper-container">
         <Swiper
           :modules="[Autoplay, Navigation]"
@@ -75,7 +72,7 @@ const breakpoints = {
 }
 
 .featured-brands {
-  background: linear-gradient(#1e88e5, #094071);
+  background: linear-gradient(var(--color-primary), #094071);
   color: white;
   padding: 20px;
   width: 180px;
@@ -123,7 +120,7 @@ const breakpoints = {
   object-fit: contain;
 }
 
-/* Style default Swiper navigation buttons */
+
 :deep(.swiper-button-next),
 :deep(.swiper-button-prev) {
   width: 30px;
@@ -131,7 +128,7 @@ const breakpoints = {
   background: white;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  color: #1e88e5;
+  color: var(--color-primary);
 }
 
 :deep(.swiper-button-next)::after,
@@ -140,7 +137,6 @@ const breakpoints = {
   font-weight: bold;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .slider-container {
     flex-direction: column;

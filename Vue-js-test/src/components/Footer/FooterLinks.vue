@@ -81,7 +81,7 @@ const quickLinks = [
     right: 0;
     width: 40px;
     height: 2px;
-    background-color: #2563eb;
+    background-color: var(--color-primary);
   }
   
   .footer-links-column ul {
@@ -103,7 +103,7 @@ const quickLinks = [
   }
   
   .footer-links-column ul li a:hover {
-    color: #2563eb;
+    color: var(--color-primary);
     padding-right: 5px;
   }
   
@@ -129,7 +129,7 @@ const quickLinks = [
   }
   
   .contact-info li i {
-    color: #2563eb;
+    color: var(--color-primary);
     font-size: 1rem;
     margin-left: 12px;
     margin-top: 3px;

@@ -45,7 +45,7 @@
   }
   
   .legal-links a:hover {
-    color: #2563eb;
+    color: var(--color-primary);
   }
   @media (max-width: 768px) { 
     .copyright {

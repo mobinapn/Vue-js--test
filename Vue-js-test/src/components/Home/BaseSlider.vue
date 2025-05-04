@@ -3,7 +3,6 @@ import { ref } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -17,7 +16,7 @@ const slides = ref([
   { image: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/339e146482a10355645286800d215af3305a6d5f_1735462444.gif?x-oss-process=image?x-oss-process=image/format,webp', alt: 'Slide 5' }
 ]);
 
-// Configure Swiper options
+
 const swiperOptions = ref({
   modules: [Navigation, Pagination, Autoplay],
   slidesPerView: 1,

@@ -2,13 +2,13 @@
 <template>
   <BaseSlider />
 
-  <div class="product-list__header">
-    <h1 class="product-list__title">پرفروش‌ترین‌ها</h1>
+  <div class="product-list_header">
+    <h1 class="product-list_title">پرفروش‌ترین‌ها</h1>
     <RouterLink to="/products">مشاهده بیشتر</RouterLink>
   </div>
 
   <ProductList :products="store.products" :loading="store.loading" :error="store.error" :limit="5" />
-
+  
   <CategorySection />
   <SelectedBrands />
 </template>
@@ -16,10 +16,10 @@
 <script setup>
 import { onMounted } from 'vue';
 import { useProductsStore } from '../stores/productsStore';
-import BaseSlider from '../components/BaseSlider.vue';
-import ProductList from '../components/ProductList.vue';
-import CategorySection from '../components/CategorySection.vue';
-import SelectedBrands from '../components/SelectedBrands.vue';
+import BaseSlider from '../components/Home/BaseSlider.vue';
+import ProductList from '../components/Products/ProductList.vue';
+import CategorySection from '../components/Home/CategorySection.vue';
+import SelectedBrands from '../components/Home/SelectedBrands.vue';
 
 const store = useProductsStore();
 
@@ -29,17 +29,15 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.product-list__header {
+.product-list_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2em;
+  margin: 2em;
+  font-weight: bold;
 }
 
-.product-list__title {
+.product-list_title {
   font-size: 1.8rem;
-  margin: 1.5rem 1rem;
-  font-weight: bold;
-  text-align: right;
 }
 </style>

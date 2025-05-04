@@ -1,4 +1,4 @@
-<!-- ProductCard.vue -->
+
 <template>
     <div class="product-card">
       <ProductColors v-if="product.colors && product.colors.length" :colors="product.colors" />
@@ -75,7 +75,7 @@
   
   .product-card__description {
     font-size: 0.8rem;
-    color: #666;
+    color: var(--color-secondary);
     line-height: 1.5;
   }
   

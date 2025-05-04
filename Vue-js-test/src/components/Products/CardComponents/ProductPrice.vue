@@ -20,7 +20,7 @@
   </template>
   
   <script setup>
-import { usePersianPrice } from '../../composables/usePersianPrice';
+import { usePersianPrice } from '@/composables/usePersianPrice';
 
   
   const props = defineProps({
@@ -68,8 +68,6 @@ import { usePersianPrice } from '../../composables/usePersianPrice';
   .product-price__current {
     font-size: 1rem;
     font-weight: 700;
-    color: #000;
-    text-align: right;
   }
   
   .product-price__original {
@@ -77,14 +75,13 @@ import { usePersianPrice } from '../../composables/usePersianPrice';
     color: #a0a0a0;
     text-decoration: line-through;
     margin-top: 0.25rem;
-    text-align: right;
   }
   
   .product-price__discount {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ef394e;
+    background-color: var(--color-discount);
     color: white;
     font-size: 0.75rem;
     font-weight: bold;
@@ -99,6 +96,6 @@ import { usePersianPrice } from '../../composables/usePersianPrice';
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
-    color: #666;
+    color: var(--color-secondary);
   }
   </style>

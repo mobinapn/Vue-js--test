@@ -18,7 +18,7 @@
   <script setup>
   import { onMounted, ref } from 'vue';
   import { useProductsStore } from '../stores/productsStore.js';
-  import ProductList from '../components/ProductList.vue';
+  import ProductList from '../components/Products/ProductList.vue';
   
   const store = useProductsStore();
   

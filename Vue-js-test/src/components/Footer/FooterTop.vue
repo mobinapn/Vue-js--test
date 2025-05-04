@@ -63,7 +63,7 @@
   }
   
   .social-media a:hover {
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     color: white;
     transform: translateY(-3px);
   }

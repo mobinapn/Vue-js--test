@@ -12,7 +12,7 @@
   
   <script setup>
   import { ref, computed, onMounted, onUnmounted } from 'vue'
-  import { usePersianPrice } from '../../composables/usePersianPrice';
+  import { usePersianPrice } from '@/composables/usePersianPrice';
   
   const props = defineProps({
     timeRemaining: {
@@ -83,7 +83,7 @@
   
   .product-timer__time {
     font-size: 0.8rem;
-    color: #ef394e;
+    color: var(--color-discount);
     font-weight: bold;
     direction: ltr;
   }
@@ -101,7 +101,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #ef394e;
+    background-color: var(--color-discount);
     transition: width 1s linear;
   }
   

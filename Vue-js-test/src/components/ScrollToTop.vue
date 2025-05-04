@@ -1,5 +1,4 @@
 <template>
-     <!-- Back to Top Button -->
      <button 
         @click="scrollToTop" 
         class="back-to-top" 
@@ -12,7 +11,7 @@
 
 <script setup>
 import { ref, onMounted , onBeforeUnmount } from 'vue'
-// Methods
+
 const showBackToTop = ref(false)
 
 const scrollToTop = () => {
@@ -25,7 +24,7 @@ const scrollToTop = () => {
   const handleScroll = () => {
     showBackToTop.value = window.scrollY > 300
   }
-   // Lifecycle
+
    onMounted(() => {
     window.addEventListener('scroll', handleScroll)
   })
@@ -35,8 +34,7 @@ const scrollToTop = () => {
   })
 </script>
 <style scoped>
-  
-  /* Back to Top Button */
+
   .back-to-top {
     position: fixed;
     bottom: 30px;
