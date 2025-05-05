@@ -9,11 +9,11 @@ import 'swiper/css/pagination';
 
 
 const slides = ref([
-  { image: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/5448b1157d3d8edea13e66fedf46024828408c04_1741705464.jpg?x-oss-process=image/quality,q_95/format,webp', alt: 'Slide 1' },
-  { image: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/4f5345308930f088b50a143b095258b2b68a4abe_1745675600.jpg?x-oss-process=image/quality,q_95/format,webp', alt: 'Slide 2' },
-  { image: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/95643e498863d67154126582d65b94f414879418_1745761363.jpg?x-oss-process=image/quality,q_95/format,webp', alt: 'Slide 3' },
-  { image: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/988e1253752d1fef349a8eb04f7ad428fceffccd_1745773709.jpg?x-oss-process=image/quality,q_95/format,webp', alt: 'Slide 4' },
-  { image: 'https://dkstatics-public.digikala.com/digikala-adservice-banners/339e146482a10355645286800d215af3305a6d5f_1735462444.gif?x-oss-process=image?x-oss-process=image/format,webp', alt: 'Slide 5' }
+  { image: '/images/slider/Slide1.webp', alt: 'Slide 1' },
+  { image: '/images/slider/slide2.webp', alt: 'Slide 2' },
+  { image: '/images/slider/slide3.webp', alt: 'Slide 3' },
+  { image: '/images/slider/slide4.webp', alt: 'Slide 4' },
+  { image: '/images/slider/slide5.gif', alt: 'Slide 5' }
 ]);
 
 

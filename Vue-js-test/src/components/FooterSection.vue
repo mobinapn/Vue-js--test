@@ -1,17 +1,15 @@
 <template>
     <footer class="footer">
       <div class="footer-container">
-        <!-- Top Section with Logo and Social Media -->
+      
         <div class="footer-top">
             <FooterTop/>
             <FooterLinks/>
         </div>
-        <!-- Middle Section with Features -->
         <FooterFeatures/>
-        <!-- Divider -->
+        
         <div class="footer-divider"></div>
   
-        <!-- Copyright Section -->
         <FooterBottom :currentYear="currentYear"/>
       </div>
     </footer>
@@ -25,7 +23,7 @@
   import FooterFeatures from './Footer/FooterFeatures.vue'
   import FooterBottom from './Footer/FooterBottom.vue'
 
-  // Computed
+
   const currentYear = computed(() => new Date().getFullYear())
   
   </script>
@@ -52,14 +50,13 @@
     margin-bottom: 40px;
   }
   
-  /* Footer Divider */
+
   .footer-divider {
     height: 1px;
     background-color: #eee;
     margin: 24px 0;
   }
-  
-  /* Responsive Styles */
+
   @media (max-width: 1024px) {
     .footer-top {
       grid-template-columns: 1fr 1fr;

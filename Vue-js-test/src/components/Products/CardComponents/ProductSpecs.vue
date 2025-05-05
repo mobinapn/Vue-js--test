@@ -49,7 +49,7 @@ const getIconClass = (key) => iconMap[key] || 'fa-solid fa-circle-question';
 .spec-item i {
   font-size: 1rem;
   margin-bottom: 0.25rem;
-  color: #666;
+  color: var(--color-secondary);
 }
 </style>
   

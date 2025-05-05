@@ -29,8 +29,8 @@ const limitedProducts = computed(() => {
 
 <template>
   <div class="product-list">
-    <div v-if="loading" class="loading">⏳ در حال بارگذاری...</div>
-    <div v-else-if="error" class="error">❌ {{ error }}</div>
+    <div v-if="loading" class="loading"> در حال بارگذاری...</div>
+    <div v-else-if="error" class="error"> {{ error }}</div>
 
     <div v-else class="product-list__container">
       <ProductCard 
@@ -66,10 +66,10 @@ const limitedProducts = computed(() => {
 .loading,
 .error {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 2rem;
 }
 
 .error {
-  color: red;
+  color: var(--color-discount);
 }
 </style>

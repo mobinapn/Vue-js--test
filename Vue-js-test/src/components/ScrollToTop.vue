@@ -41,7 +41,7 @@ const scrollToTop = () => {
     left: 30px;
     width: 45px;
     height: 45px;
-    background-color: #2563eb;
+    background-color: var(--color-primary);
     color: white;
     border: none;
     border-radius: 50%;

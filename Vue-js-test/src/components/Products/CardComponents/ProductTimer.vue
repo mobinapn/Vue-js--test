@@ -78,7 +78,7 @@
   .product-timer__label {
     font-size: 1rem;
     font-weight: bold;
-    color: #ef394e;
+    color: var(--color-discount);
   }
   
   .product-timer__time {

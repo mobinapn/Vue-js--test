@@ -56,7 +56,7 @@
   }
   
   .load-more-button {
-    background-color: #3498db;
+    background-color: var(--color-primary);
     color: white;
     border: none;
     padding: 0.8rem 2rem;

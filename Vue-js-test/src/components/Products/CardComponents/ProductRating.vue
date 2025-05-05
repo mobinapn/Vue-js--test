@@ -2,18 +2,21 @@
     <div class="product-rating">
     <div v-if="rating > 0">
       <span  class="product-rating__star"><i class="fa-solid fa-star"></i></span>
-      <span class="product-rating__value">{{ rating }}</span>
+      <span class="product-rating__value">{{ toPersianDigits(rating) }}</span>
     </div>
     </div>
   </template>
   
   <script setup>
+  import { usePersianPrice } from '@/composables/usePersianPrice';
+
   defineProps({
     rating: {
       type: Number,
       default: 0
     }
   });
+  const { toPersianDigits } = usePersianPrice();
   </script>
   
   <style scoped>
@@ -32,7 +35,7 @@
   .product-rating__value {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #666;
+    color:var(--color-secondary)
   }
   </style>
   

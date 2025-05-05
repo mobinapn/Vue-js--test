@@ -40,7 +40,10 @@
   }
   
   const toggleMenu = () => {
-    isMenuOpen.value = !isMenuOpen.value
+    isMenuOpen.value = !isMenuOpen.value 
+    if(!isMenuOpen.value){
+      isSearchOpen.value = false
+    }
   }
   </script>
   
@@ -98,7 +101,7 @@
     right: 0;
     width: 0%;
     height: 2px;
-    background: #333;
+    background: var(--color-primary);
     transition: width 0.3s ease;
   }
   
@@ -115,7 +118,7 @@
 
   .searchBox {
     position: absolute;
-    top: 70px;
+    top: 4rem;
     right: -100%;
     width: 100%;
     background: #fff;
@@ -168,6 +171,9 @@
   
     .search {
       margin-top: 15px;
+    }
+    .searchBox {
+      top: 20rem;
     }
   }
   </style>
