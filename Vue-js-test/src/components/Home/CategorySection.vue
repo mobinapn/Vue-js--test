@@ -7,7 +7,7 @@
           :key="'first-' + index"
           class="category-item"
         >
-          <img :src="cat.image" :alt="cat.title" />
+          <img :src="cat.image" :alt="cat.title" loading="lazy"/>
           <span class="label">{{ cat.title }}</span>
         </div>
       </div>
@@ -17,7 +17,7 @@
           :key="'second-' + index"
           class="category-item"
         >
-          <img :src="cat.image" :alt="cat.title" />
+          <img :src="cat.image" :alt="cat.title" loading="lazy" />
           <span class="label">{{ cat.title }}</span>
         </div>
       </div>
@@ -70,6 +70,7 @@
     justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
+    min-height: 130px;
   }
   
   .second-row {
@@ -80,9 +81,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px;
+    width: 100px;  
     cursor: pointer;
     transition: transform 0.2s ease;
+    will-change: transform;
   }
   
   .category-item:hover {
@@ -92,12 +94,13 @@
   .category-item img {
     width: 100px;
     height: 100px;
-    object-fit:fill;
+    object-fit:cover;
     border-radius: 50%;
     background-color: #f5f5f5;
     margin-bottom: 0.5rem;
     border: 1px solid #eee;
     padding: 2px;
+    display: block;
   }
   
   .label {
